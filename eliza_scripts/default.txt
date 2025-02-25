@@ -1,0 +1,198 @@
+
+initial: How can I help you?
+final: Goodbye. It was nice talking to you.
+quit: bye quit goodbye exit
+pre: dont don't
+ dont do not
+ cant can not
+ wont will not
+ recollect remember
+ dreamt dreamed
+ dreams dream
+ maybe perhaps
+ how what
+ when what
+ certainly yes
+ machine computer
+ computers computer
+ were was
+ you're you are
+ i'm i am
+ same alike
+post: am are
+ your my
+ me you
+ myself yourself
+ yourself myself
+ i you
+ you I
+ my your
+ i'm you are
+synon: belief feel think believe wish
+ family mother mom father dad sister brother wife children child
+ desire want need
+ sad unhappy depressed sick
+ happy elated glad better
+ cannot can't
+ everyone everybody nobody noone
+ be am is are was
+key: xnone
+  * (.*)[.?!][  ]*(.*)[.?!]
+  % Interesting. Tell me more about that.
+key: sorry
+  * 
+  % Please don't apologize.
+  % Apologies are not necessary.
+  % What feelings do you have when you apologize?
+key: computer
+  * 
+  % Do computers worry you?
+  % What do you think about machines?
+  % Why do you mention computers?
+  % What do you think machines have to do with your problem?
+key: name
+  * 
+  % I am not interested in names.
+key: deutsch
+  * 
+  % I only understand English.
+key: francais
+  * 
+  % I only understand English.
+key: espanol
+  * 
+  % I only understand English.
+key: hello
+  * 
+  % How do you do. Please state your problem.
+key: hi
+  * 
+  % How do you do. Please state your problem.
+key: hey
+  * 
+  % How do you do. Please state your problem.
+key: computer
+  * 
+  % Do computers worry you?
+  % Why do you mention computers?
+  % What do you think machines have to do with your problem?
+key: am
+  * am i (.*)[?]
+  % Do you believe you are <1>?
+  * i am *.
+  % Is it because you are <1> that you came to me?
+key: are
+  * are you (.*)[?]
+  % Why are you interested in whether I am <1> or not?
+  * are
+  % Perhaps I am <1>.
+key: your
+  * your *
+  % Why are you concerned about my <1>?
+  % What about your own <1>?
+key: was
+  * was you *
+  % Would you like to believe I was <1>?
+  * was i *
+  % What if you were <1>?
+  * i was *
+  % Were you really?
+  % Why do you tell me you were <1> now?
+key: i
+  * i [*] you *
+  % Perhaps in your fantasy we <2> each other.
+  * i am* (depressed|sad) *
+  % I am sorry to hear you are depressed.
+  * i am* (happy|excited) *
+  % How have I helped you to be <2>?
+  * i (.*) you
+  % Perhaps in your fantasy we <1> each other.
+key: you
+  * you* me
+  % Why do you think I <1> you?
+  * you* (.*)[?]
+  % We were discussing you - not me.
+  * you *
+  % You're not really talking about me - are you?
+key: yes
+  * 
+  % You seem quite positive.
+  % You are sure.
+  % I see.
+key: no
+  * 
+  % Are you saying no just to be negative?
+  % You are being a bit negative.
+  % Why not?
+key: my
+  * my* family *
+  % Tell me more about your family.
+  * my* (.*)[?]
+  % Why do you ask about your <1>?
+  * my* (.*)[.]
+  % Your <1>.
+  % Let's discuss further why your <1>.
+key: can
+  * can you *
+  % You believe I can <1> don't you?
+  * can i *
+  % Whether or not you can <1> depends on you more than on me.
+  % Do you want to be able to <1>?
+key: what
+  * what *
+  % Why do you ask?
+  % Does that question interest you?
+  % What is it you really want to know?
+  % What do you think?
+  % What comes to mind when you ask that?
+key: because
+  * 
+  % Is that the real reason?
+  % Don't any other reasons come to mind?
+  % Does that reason seem to explain anything else?
+key: why
+  * why don't you *
+  % Do you believe I don't <1>?
+  % Perhaps I will <1> in good time.
+  * why can't i *
+  % Do you think you should be able to <1>?
+  % Why can't you <1>?
+key: everyone
+  * * everyone *
+  % Really, everyone?
+  % Surely not everyone.
+  % Can you think of anyone in particular?
+key: everybody
+  * * everybody *
+  % Really, everybody?
+  % Surely not everybody.
+  % Can you think of anyone in particular?
+key: nobody
+  * * nobody *
+  % Are you sure nobody <1>?
+  % Surely someone <1>.
+  % Can you think of anyone in particular?
+key: noone
+  * * noone *
+  % Are you sure noone <1>?
+  % Surely someone <1>.
+  % Can you think of anyone in particular?
+key: always
+  * 
+  % Can you think of a specific example?
+  % When?
+  % What incident are you thinking of?
+key: alike
+  * 
+  % In what way?
+  % What resemblance do you see?
+key: like
+  * * like *
+  % What does that similarity suggest to you?
+  % What other connections do you see?
+key: different
+  * 
+  % How is it different?
+  % What differences do you see?
+  % What does that difference suggest to you?
+  % What other distinctions do you see?
