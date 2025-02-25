@@ -1,6 +1,6 @@
 
 initial: How can I help you?
-final: Goodbye. It was nice talking to you.
+final: Goodbye! Feel free to chat again anytime.
 quit: bye quit goodbye exit
 pre: dont don't
  dont do not
@@ -67,10 +67,16 @@ key: hello
   % How do you do. Please state your problem.
 key: hi
   * 
-  % How do you do. Please state your problem.
+  % Hi! How can I help you today?
+  % Hello! What's on your mind?
 key: hey
   * 
-  % How do you do. Please state your problem.
+  % Hi! How can I help you today?
+  % Hello! What's on your mind?
+key: hello
+  * hello*
+  % Hi! How can I help you today?
+  % Hello! What's on your mind?
 key: computer
   * 
   % Do computers worry you?
@@ -101,8 +107,9 @@ key: was
 key: i
   * i [*] you *
   % Perhaps in your fantasy we <2> each other.
-  * i am* (depressed|sad) *
-  % I am sorry to hear you are depressed.
+  * i am* (depressed|sad|unhappy) *
+  % I'm sorry to hear that. Can you tell me more?
+  % Let's talk about why you're feeling this way.
   * i am* (happy|excited) *
   % How have I helped you to be <2>?
   * i (.*) you
